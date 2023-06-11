@@ -1,0 +1,320 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: url(../fontes/Amazon\ Ember.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Amazon Ember Light';
+    src: url(../fontes/Amazon\ Ember\ Light.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'Amazon Ember Medium';
+    src: url(../fontes/Amazon\ Ember\ Medium.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'Amazon Ember Thin';
+    src: url(../fontes/Amazon\ Ember\ Thin.ttf) format(truetype);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+main {
+    max-width: 100%;
+    min-width: 320px;
+    margin: auto;
+}
+
+:root {
+    --corprinc: #0F79AF;
+
+    --fonte-padrão: 'Amazon Ember', Arial;
+    --fonte-lighter: 'Amazon Ember Light', Arial;
+    --fonte-medium: 'Amazon Ember Medium', Arial;
+    --fonte-thin: 'Amazon Ember Thin', Arial;
+}
+
+@media screen and (max-width: 500px) {
+    article {
+        width: 50%;
+    }
+}
+
+header {
+    display: flex;
+    background-color: #00050D;
+    color: white;
+    font-family: var(--fonte-padrão);
+}
+
+header > a > img {
+    padding-top: 15px;
+    padding-left: 345px;
+    margin-right: 17px;
+    height: 25px;
+}
+ 
+.wrap a {
+    text-decoration: none;
+    color: #AAAAAA;
+    display: block;
+    font-family: var(--fonte-medium);
+    font-size: 22px;
+    
+}
+
+ul {
+    list-style: none;
+    position: relative;
+    text-align: left;
+}
+  
+li {
+    float: left;
+}
+ 
+ul.primary li a {
+    display: block;
+    padding: 15px 25px;
+}
+  
+ul.sub {
+    position: absolute;
+    z-index: 200;
+    width: 35%;
+    display:none;
+}
+  
+ul.sub li {
+    float: none;
+    margin: 0;
+}
+  
+ul.primary li:hover ul {
+    display: block;
+}
+
+ul.primary li:hover a {
+    background: #191E25;
+    color: #666;
+}
+  
+ul.primary li:hover > a{
+    color: rgb(255, 255, 255);
+    background: #2f3031;
+} 
+  
+@media only screen and (max-width: 600px) {
+    .decor {
+      padding: 3px;
+}
+    
+.wrap {
+      width: 100%;
+      margin-top: 0px;
+}
+
+li {
+    float: none;
+}
+    
+ul.sub {
+    display: block;  
+    position: static;
+    box-shadow: none;
+    width: 300%;
+}
+  }
+
+nav {
+    display: flex;
+    color: gray;
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    position: relative;
+    background: #00050D;
+    letter-spacing: 1px;
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: #AAAAAA;
+    font-family: var(--fonte-medium);
+    padding: 0px 0px 0px 30px;
+    font-size: 22px;
+}
+
+i {
+    color: #ffffff;
+    font-size: 13px;
+    padding-top: 6px;
+    margin: 4px;
+    position: absolute;
+    margin-left: 8px;
+}
+
+.experi {
+    padding: 15px 0px 0px 130px;
+}
+
+.lupa {
+    padding: 15px 0px 0px 0px;
+}
+
+.lupa > i {
+    font-size: 30px;
+    color: #AAAAAA;;
+}
+
+div > i {
+    padding: 0px;
+    margin-top: 0px;
+    margin-left: 80px;
+    font-size: 30px;
+    box-sizing: border-box;
+}
+
+.edit > a {
+    text-decoration: none;
+    color: #AAAAAA;
+    font-family: var(--fonte-medium);
+    padding: 16px 0px 0px 30px;
+    font-size: 22px;
+}
+
+.experi > a {
+    padding: 0px 0px 0px 30px;
+    margin: 0px;
+}
+
+div > a > img {
+    height: 42px;
+    padding-left: 30px;
+    margin: 5px;
+}
+
+.menu1 {
+    margin-left: 520px;
+    position: absolute;
+    display: none;
+}
+
+.botao1 > a > button {
+   font-size: 25px;
+   color: white;
+   background-color: #0F79AF;
+   padding: 20px 145px 20px 145px;
+   margin: 60px 0px 0px 90px;
+   font-family: var(--fonte-medium);
+   border-radius: 3px;
+}
+
+.botao2 > a > button {
+    font-size: 25px;
+    color: white;
+    background-color: #0F79AF;
+    padding: 20px 158px 20px 145px;
+    margin: 18px 0px 0px 90px;
+    font-family: var(--fonte-medium);
+    border-radius: 3px;
+}
+
+article button:hover {
+    cursor: pointer;
+}
+
+main > article {
+    display: block;
+    background-image: linear-gradient(to right, black 40%, transparent 50%), url(../imagens/background-main.jpg);
+    background-repeat: no-repeat;
+    height: 49em;
+    color: white;
+    width: 100%;
+}
+
+#principal-h1 {
+    padding: 60px 0px 0px 90px;
+    font-size: 40px;
+    font-family: var(--fonte-lighter);
+}
+
+.texto-p {
+    padding: 40px 0px 0px 90px;
+    font-size: 29px;
+    font-family: var(--fonte-lighter);
+}
+
+span > p {
+    font-size: 20px;
+    font-family: var(--fonte-lighter);
+    margin: 14px 0px 10px 266px;
+}
+
+.linha {
+    content: '';
+    display: block;
+    height: 1px;
+    margin: 15px 0px 0px 300px;
+    position: absolute;
+    width: 164px;
+    background-color: white;
+ }
+
+.linha2 {
+    content: '';
+    height: 1px;
+    display: block;
+    margin: 15px 0px 0px 90px;
+    width: 164px;
+    position: absolute;
+    background-color: white;
+}
+ 
+.quantidade {
+    margin: 40px 0px 0px 89px;
+    font-family: var(--fonte-lighter);
+    font-size: 20px;
+}
+
+.generos {
+    color: #000000;
+    font-size: 40px;
+    margin: 55px 0px 0px 89px;
+    font-family: var(--fonte-thin);
+    display: inline-block;
+}
+
+.textp {
+    color: #000000;
+    font-size: 32px;
+    margin: 45px 0px 0px 89px;
+    font-family: var(--fonte-lighter);
+}
+
+div > img {
+    display: inline-block;
+    padding: 1px;
+    margin: 0px 0px 0px 0px;
+    margin: auto;
+    width: 30%;
+}
+
+.imagens {
+    display: inline-block;
+    position: absolute;
+    margin: 40px 0px 0px 850px;
+    padding: 0px;
+}
+
+.imagens > img:hover {
+    transition-duration: 0.3s;
+    box-shadow: 2px 2px 10px 4px rgb(0, 0, 0);
+    cursor: pointer;
+}
