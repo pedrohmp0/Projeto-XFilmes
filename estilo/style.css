@@ -318,3 +318,31 @@ div > img {
     box-shadow: 2px 2px 10px 4px rgb(0, 0, 0);
     cursor: pointer;
 }
+
+section h1{
+    font-family: var(--fonte-padrão);
+    font-size: 50px;
+    text-align: right;
+    color: black;
+}
+
+section p {
+    font-family: var(--fonte-lighter);
+    font-size: 30px;
+    text-align: right;
+    color: black;
+}
+
+section button {
+    font-size: 25px;
+    color: white;
+    background-color: #0F79AF;
+    padding: 20px 145px 20px 145px;
+    margin: 60px 0px 0px 90px;
+    font-family: var(--fonte-medium);
+    border-radius: 3px;
+}
+
+section {
+    margin-right: 17em;
+}
